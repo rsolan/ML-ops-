@@ -1,5 +1,0 @@
-python -m venv venv
-Set-ExecutionPolicy Unrestricted -Scope CurrentUser
-
-
-venv\Scripts\activate
