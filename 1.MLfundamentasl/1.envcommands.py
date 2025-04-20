@@ -34,3 +34,20 @@ git init
 # dvc --version
 
 dvc init
+
+
+
+
+
+# 3.
+# Freeze your environment:
+pip freeze > requirements.txt
+
+# Ignore the venv/ folder so it’s not accidentally pushed to Git: Add this to your .gitignore:
+venv/
+  
+# If needed later on a new system or after deleting the venv/:
+python -m venv venv
+venv\Scripts\activate  # or source venv/bin/activate (Linux/Mac)
+pip install -r requirements.txt
+# This will fully restore your environment.
