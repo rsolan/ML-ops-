@@ -80,4 +80,5 @@ test_data.to_csv(os.path.join(data_path, "test.csv"), index=False)
 # data - raw test/train file created
 
 # 5. cmd - 
-
+dvc stage add -n data_ingestion -d src/data_ingestion.py -o data/raw python src/data_ingestion.py
+# - update or create new folder depending upon changes
