@@ -97,3 +97,7 @@ stages:
 # 6. run cmd
 dvc repro   #dv run outdated
 
+PS C:\Users\tusha\OneDrive\Desktop\mlopspractice> git add .
+PS C:\Users\tusha\OneDrive\Desktop\mlopspractice> git commit -m "Initial clean commit with DVC setup and data ingestion"
+PS C:\Users\tusha\OneDrive\Desktop\mlopspractice> git remote add origin https://github.com/uname/mlopspractice.git 
+PS C:\Users\tusha\OneDrive\Desktop\mlopspractice> git push -u origin master
