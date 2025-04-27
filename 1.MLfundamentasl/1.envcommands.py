@@ -82,3 +82,18 @@ test_data.to_csv(os.path.join(data_path, "test.csv"), index=False)
 # 5. cmd - 
 dvc stage add -n data_ingestion -d src/data_ingestion.py -o data/raw python src/data_ingestion.py
 # - update or create new folder depending upon changes
+
+# dvc.yaml file created
+'''
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - src/data_ingestion.py
+    outs:
+    - data/raw
+'''
+
+# 6. run cmd
+dvc repro   #dv run outdated
+
