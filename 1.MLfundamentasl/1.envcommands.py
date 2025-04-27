@@ -51,3 +51,7 @@ python -m venv venv
 venv\Scripts\activate  # or source venv/bin/activate (Linux/Mac)
 pip install -r requirements.txt
 # This will fully restore your environment.
+
+
+#4. src - data_ingestion.py
+
